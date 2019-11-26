@@ -4,18 +4,19 @@
 from flask import Flask,render_template
 app = Flask(__name__)
 
-name = 'Grey Li'
+name = '最新国内动漫'
+
 movies = [
-	{'title': 'My Neighbor Totoro', 'year': '1988'},
-	{'title': 'Dead Poets Society', 'year': '1989'},
-	{'title': 'A Perfect World', 'year': '1993'},
-	{'title': 'Leon', 'year': '1994'},
-	{'title': 'Mahjong', 'year': '1996'},
-	{'title': 'Swallowtail Butterfly', 'year': '1996'},
-	{'title': 'King of Comedy', 'year': '1999'},
-	{'title': 'Devils on the Doorstep', 'year': '1999'},
-	{'title': 'WALL-E', 'year': '2008'},
-	{'title': 'The Pork of Music', 'year': '2012'},
+	{'title': '秦时明月', 'year': '1988'},
+	{'title': '斗罗大陆', 'year': '1989'},
+	{'title': '武庚纪', 'year': '1993'},
+	{'title': '天行九歌', 'year': '1994'},
+	{'title': '墓王之王', 'year': '1996'},
+	{'title': '超神学院', 'year': '1996'},
+	{'title': '星辰变', 'year': '1999'},
+	{'title': '斗破苍穹', 'year': '1999'},
+	{'title': '地灵曲', 'year': '2008'},
+	{'title': '少年锦衣卫', 'year': '2012'},
 ]
 
 @app.route('/')
